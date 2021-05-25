@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  height: 69px;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+header p {
+  margin: 0px 20px;
+  text-decoration: underline;
+}
+
+header img {
+  position: fixed;
+  left: 10px;
+  height: 60px;
+  margin: auto;
+}
+
+main {
+  position: relative;
+  top: 69px;
+}
+
+.first {
+  max-width: 1200px;
+  height: 700px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-image: url('../images/img-mission-background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.first div h2, .first div h4 {
+  text-transform: capitalize;
+  background-color: black;
+  opacity: 0.9;
+  flex-shrink: 1;
+  width: 100vw;
+  padding: 10px 0px;
+  margin: 0;
+  isolation: isolate;
+}
+
+.second {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.box {
+  margin: 10px 40px;
+}
+
+.box img {
+  width: 300px;
+  height: 200px;
+}
+
+.box h4 {
+  width: inherit;
+  padding: 10px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h4 {
+  margin: 20px 0px;
+}
+
+.third {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url('../images/img-locations-background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: 300px;
+  height: 280px;
+  background-color: black;
+  margin: 20px;
+}
+
+.third h2 {
+  text-align: center;
+  padding: 55px 0px 15px 0px;
+}
+
+.third h3, .third p {
+  padding: 20px 10px; 
+}
+
+@media only screen and (max-width: 1140px) {
+  .third {
+    height: 100%;
+  }
+}
+
+.footer {
+  height: 200px;
+  margin-top: 0;
+}
+
+.footer h5 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+main h5 {
+  text-align: left;
+  padding: 10px; 
+}
